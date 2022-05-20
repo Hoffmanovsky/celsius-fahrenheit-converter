@@ -46,8 +46,10 @@ const convertTemp = () => {
   if (converter.value !== '') {
     if (one.textContent === '°C') {
       celsiusToFahrenheit();
+      converter.value = '';
     } else {
       fahrenheitToCelsius();
+      converter.value = '';
     }
   } else {
     result.textContent = 'Wpisz poprawną liczbę stopni!';
