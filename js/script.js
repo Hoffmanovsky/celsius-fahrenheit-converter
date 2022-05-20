@@ -32,14 +32,14 @@ const celsiusToFahrenheit = celsius => {
   let grades;
   celsius = converter.value;
   grades = celsius * 1.8 + 32;
-  result.textContent = `${converter.value} °C = ${grades} °F`;
+  result.textContent = `${converter.value} °C = ${grades.toFixed(1)} °F`;
 };
 
 const fahrenheitToCelsius = fahrenheit => {
   let grades;
   fahrenheit = converter.value;
   grades = (fahrenheit - 32) / 1.8;
-  result.textContent = `${converter.value} °F = ${grades} °C`;
+  result.textContent = `${converter.value} °F = ${grades.toFixed(1)} °C`;
 };
 
 const convertTemp = () => {
